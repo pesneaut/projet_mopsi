@@ -1,0 +1,13 @@
+function save_image()
+Dossier=uigetdir;
+liste = dir(Dossier);
+for i=3:length(liste)
+    nom = liste(i).name;
+    ext = ['\' nom];
+    file = [Dossier ext];
+    if file(end-2:end) == 'jpg' or 
+    I=imread(file);
+    figure(i);
+    imagesc(I);
+    axis image off;
+end
