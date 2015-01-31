@@ -63,7 +63,6 @@ classdef Ensemble <handle
             [correspondante order] = sort(Liste_images,'descend'); %% on tri
             Liste_images = order(1:5); %% et on renvoit les 5 images les plus rencontrées
             
-            
         end
     end
 end
